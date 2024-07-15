@@ -4,7 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biotech Startup</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            background-color: #333;
+            justify-content: space-around;
+            padding: 1em;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            padding: 20px;
+        }
+        .home {
+            background-image: url('https://example.com/it-consulting-firm.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .home h1 {
+            font-size: 3em;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -27,24 +64,7 @@
 
     <div id="services" class="section">
         <h2>Services</h2>
-        <ul>
-            <li>
-                <strong>Cloning Method Creation with AI:</strong> Utilizing AI to develop efficient and accurate cloning methods tailored to your research needs.
-                <a href="cloning-method.html">Learn More</a>
-            </li>
-            <li>
-                <strong>Primer Designing:</strong> Expert primer design services to ensure successful amplification and sequencing.
-                <a href="primer-designing.html">Learn More</a>
-            </li>
-            <li>
-                <strong>AI Textmining for Research Questions Generation:</strong> Leveraging AI to generate insightful research questions from vast amounts of scientific literature.
-                <a href="ai-textmining.html">Learn More</a>
-            </li>
-            <li>
-                <strong>Manuscript Editing:</strong> Professional editing services to enhance the clarity and impact of your scientific manuscripts.
-                <a href="manuscript-editing.html">Learn More</a>
-            </li>
-        </ul>
+        <p>Our services include research and development, consulting, and product development in various biotech fields.</p>
     </div>
 
     <div id="pricing" class="section">
@@ -60,22 +80,6 @@
     <div id="contact-us" class="section">
         <h2>Contact Us</h2>
         <p>Get in touch with us at <a href="mailto:info@biotechstartup.com">info@biotechstartup.com</a> or call us at (123) 456-7890.</p>
-        <p>Address: 123 Biotech Lane, Suryapet, Telangana, India</p>
     </div>
-
-    <footer class="footer">
-        <h2>Contact Form</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </footer>
 </body>
 </html>
-
-
